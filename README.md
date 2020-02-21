@@ -14,23 +14,24 @@ The goal of this project was to use text gathered from official Twitter feeds in
 ### Code
 
 #### Data Collection
-[1](https://github.com/KellySlatery/client_project/blob/master/01_Project_Data_Collection.ipynb)\
-[2](https://github.com/KellySlatery/client_project/blob/master/02_Extra_Data_Collection.ipynb)\
-[3](https://github.com/KellySlatery/client_project/blob/master/03_Police_Data_Collection.ipynb)\
-[4](https://github.com/KellySlatery/client_project/blob/master/04_Data_Concatenation.ipynb)
+[1: 01_Project_Data_Collection](https://github.com/KellySlatery/client_project/blob/master/01_Project_Data_Collection.ipynb)\
+[2: 02_Extra_Data_Collection](https://github.com/KellySlatery/client_project/blob/master/02_Extra_Data_Collection.ipynb)\
+[3: 03_Police_Data_Collection](https://github.com/KellySlatery/client_project/blob/master/03_Police_Data_Collection.ipynb)\
+[4: 04_Data_Concatenation](https://github.com/KellySlatery/client_project/blob/master/04_Data_Concatenation.ipynb)
 
 #### Data Cleaning & EDA
-[1](https://github.com/KellySlatery/client_project/blob/master/05_EDA_and_Data_Cleaning.ipynb)\
-[2](https://github.com/KellySlatery/client_project/blob/master/06_Prepare_Train_Data.ipynb)
+[1: 05_EDA_and_Cleaning](https://github.com/KellySlatery/client_project/blob/master/05_EDA_and_Data_Cleaning.ipynb)\
+[2: 06_Prepare_Train_Data](https://github.com/KellySlatery/client_project/blob/master/06_Prepare_Train_Data.ipynb)
 
 #### Modeling & Predictions
-[1](https://github.com/KellySlatery/client_project/blob/master/07_Model_Data_1.ipynb)\
-[2](https://github.com/KellySlatery/client_project/blob/master/08_Model_Data_2.ipynb)\
-[3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)\
-[4](https://github.com/KellySlatery/client_project/blob/master/10_Model_Predictions.ipynb)
+[1: 07_Model_Data_1](https://github.com/KellySlatery/client_project/blob/master/07_Model_Data_1.ipynb)\
+[2: 08_Model_Data_2](https://github.com/KellySlatery/client_project/blob/master/08_Model_Data_2.ipynb)\
+[3: 09_Model_Data_3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)\
+[4: 10_Model_Predictions](https://github.com/KellySlatery/client_project/blob/master/10_Model_Predictions.ipynb)
 
 #### Data
-[All](https://github.com/KellySlatery/client_project/tree/master/data) → [Training](https://github.com/KellySlatery/client_project/tree/master/data/train_data) | [Test](https://github.com/KellySlatery/client_project/tree/master/data/test_data)\
+[All Data](https://github.com/KellySlatery/client_project/tree/master/data) → 
+[Training](https://github.com/KellySlatery/client_project/tree/master/data/train_data) | [Test](https://github.com/KellySlatery/client_project/tree/master/data/test_data)\
 [Predictions](https://github.com/KellySlatery/client_project/blob/master/data/final_data_with_predictions.csv)
 
 #### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
@@ -64,11 +65,11 @@ With a collection of around 100 tweets made during Hurricane Harvey which our mo
 
 ## Data Collection
 
-We collected data using the [GetOldTweets3](#https://pypi.org/project/GetOldTweets3/) (GOT3) Python library for accessing tweets. While the Official Twitter API is robust, it limits data collection to the past week, so GOT3 provided access to much more data while also allowing for search by date range (and more, described below in [Results and Recommendations](## Results and Recommendations).
+We collected data using the [GetOldTweets3](#https://pypi.org/project/GetOldTweets3/) (GOT3) Python library for accessing tweets. While the Official Twitter API is robust, it limits data collection to the past week, so GOT3 provided access to much more data while also allowing for search by date range (and more, described below in [Results and Recommendations](https://github.com/KellySlatery/client_project#Results-and-Recommendations).
 
-Train data consists of all tweets from 56 total accounts over the past 3 years (2016-01-01 to 2020-02-10), excluding the time period when Hurricane Harvey was in Texas (2017-08-25 to 2017-09-02). Of the 56 Twitter accounts, 52 were official Texas Police Department (PD) accounts or official Texas Department of Transportation (TxDOT) accounts, with 4 unofficial transportation accounts recommend by TxDOT on their [website](#https://www.txdot.gov/driver/weather/txdot-twitter-feeds.html).
+Train data consists of all tweets from 56 total accounts over the past 3 years (2016-01-01 to 2020-02-10), excluding the time period when Hurricane Harvey was in Texas (2017-08-25 to 2017-09-02). Of the 56 Twitter accounts, 52 were official Texas Police Department (PD) accounts or official Texas Department of Transportation (TxDOT) accounts, with 4 unofficial transportation accounts recommend by TxDOT on their [website](https://www.txdot.gov/driver/weather/txdot-twitter-feeds.html).
 
-Test data includes tweets pulled from all 30 of the same official Texas PD accounts, along with 12 official or recommended TxDOT accounts from locations near where Hurricane Harvey hit. This is the data that was unseen by our model during model training, and then was used to extract the location information visible on our [public Tableau map](#https://public.tableau.com/shared/WCGKZ9D3M?:display_count=y&:origin=viz_share_link).
+Test data includes tweets pulled from all 30 of the same official Texas PD accounts, along with 12 official or recommended TxDOT accounts from locations near where Hurricane Harvey hit. This is the data that was unseen by our model during model training, and then was used to extract the location information visible on our [public Tableau map](https://public.tableau.com/shared/WCGKZ9D3M?:display_count=y&:origin=viz_share_link).
 
 
 ## EDA and Cleaning
@@ -95,12 +96,12 @@ After labeling the data, we set up 7 GridSearches to evaluate parameters for Log
 
 Of the 7 GridSearches, all models performed quite well, however most were also overfit. Logistic Regression with a CountVectorizer and l1 regularization received the same accuracy score for training cross-validation and testing, at 99.7%. While the Random Forest received a 98.8% on testing data, it received 100% on the training data, and thus we deemed it well overfit.
 
-Proceeding with the logistic regression, we used the [pickle module](#https://docs.python.org/3/library/pickle.html) to export the model (serialize the model by converting it into a byte stream) for future use. Then, we made predictions on the raw test data by importing (deserializing / unpickling) our model of choice, and added those predicted classes ({1: ‘useful’, 0: ‘not useful’}) to the dataframe for coordinate fetching.
+Proceeding with the logistic regression, we used the [pickle module](https://docs.python.org/3/library/pickle.html) to export the model (serialize the model by converting it into a byte stream) for future use. Then, we made predictions on the raw test data by importing (deserializing / unpickling) our model of choice, and added those predicted classes ({1: ‘useful’, 0: ‘not useful’}) to the dataframe for coordinate fetching.
 
 
 ## Results and Recommendations
 
-Our results are shown on this [public Tableau map](#https://public.tableau.com/shared/WCGKZ9D3M?:display_count=y&:origin=viz_share_link). While the contents of this repository cover the basic breadth of steps necessary to accomplish the problem statement goal, this is a complex project with many moving features. With more time and resources, we hope we could expand on this notebook to accomplish the following:
+Our results are shown on this [public Tableau map](https://public.tableau.com/shared/WCGKZ9D3M?:display_count=y&:origin=viz_share_link). While the contents of this repository cover the basic breadth of steps necessary to accomplish the problem statement goal, this is a complex project with many moving features. With more time and resources, we hope we could expand on this notebook to accomplish the following:
 
 - Data Collection: Besides official Twitter accounts, we could also use search for tweets by geo coordinates and search query terms to find live updates on traffic information from everyday users. Additionally, we could build a web scraper to get information from other sites that provide live disaster updates, such as FEMA or local news sources. Last, data would need to be collected in real-time in the event of a disaster, and thus we would like to upload our data to AWS and create functions to automatically scrape sources and run our notebooks to provide the user with a real-time map of road blockages near them.
 
