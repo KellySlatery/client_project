@@ -1,6 +1,6 @@
 # Project 5: Optimizing Evacuation Routes using Real-Time Traffic Information
 
-Song May, Michael Daugherty, Kelly Slatery | 02.21.2020 | US-DSI-10
+Kelly Slatery, Song May, Michael Daugherty | 02.21.2020 | US-DSI-10
 
 ## Problem Statement
 
