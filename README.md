@@ -28,6 +28,32 @@ For our fifth project in General Assembly Data Science Immersive course, we tack
 - This is the bridge that was missing in getting information to people in the most accessible, quick-to-use, easy-tounderstand form in the case of emergencies
 - we hope it can be put into practice someday!!
 
+## Table of Contents
+*Code is presented in the order in which it was written and run; data may be viewed in any order*
+
+### Code
+
+#### Data Collection
+[1](https://github.com/KellySlatery/client_project/blob/master/01_Project_Data_Collection.ipynb)
+[2](https://github.com/KellySlatery/client_project/blob/master/02_Extra_Data_Collection.ipynb)
+[3](https://github.com/KellySlatery/client_project/blob/master/03_Police_Data_Collection.ipynb)
+[4](https://github.com/KellySlatery/client_project/blob/master/04_Data_Concatenation.ipynb)
+
+#### Data Cleaning & EDA
+[1](https://github.com/KellySlatery/client_project/blob/master/05_EDA_and_Data_Cleaning.ipynb)
+[2](https://github.com/KellySlatery/client_project/blob/master/06_Prepare_Train_Data.ipynb)
+
+#### Modeling & Predictions
+[1](https://github.com/KellySlatery/client_project/blob/master/07_Model_Data_1.ipynb)
+[2](https://github.com/KellySlatery/client_project/blob/master/08_Model_Data_2.ipynb)
+[3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)
+[4](https://github.com/KellySlatery/client_project/blob/master/10_Model_Predictions.ipynb)
+
+### Data
+[All](https://github.com/KellySlatery/client_project/tree/master/data) → [Training](https://github.com/KellySlatery/client_project/tree/master/data/train_data) | [Test](https://github.com/KellySlatery/client_project/tree/master/data/test_data)\
+[Predictions](https://github.com/KellySlatery/client_project/blob/master/data/final_data_with_predictions.csv)
+
+### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
 
 ## Executive Summary
 
