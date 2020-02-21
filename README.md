@@ -31,6 +31,15 @@ For our fifth project in General Assembly Data Science Immersive course, we tack
 
 ## Executive Summary
 
+When a natural disaster occurs and evacuation of an area becomes necessary, it is imperative that the people in that area have quick and easy access to information about which routes to use and which to avoid. Often, this information is scattered across the internet and can be difficult to find. It must therefore be aggregated and converted into a more usable form. This project is an attempt to accomplish that goal.
+
+The first step of the process was data collection. We focused on Twitter for its large volume of publicly available posts and the simple methods available for accessing them in bulk. We used the Python library [Get Old Tweets 3](https://github.com/Dawars/GetOldTweets3) to scrape from 69 Twitter feeds in Texas, including 39 departments of transportation and 30 police departments, dating back to 2016.
+
+This large collection was then searched for words such as "road," "highway", and "closed." Those tweets which contained such words were labeled pertinent (1), and those which didn't were labeled nonpertinent (0). We then separated the tweets into those from before or after Hurricane Harvey (25 August - 2 September 2017), and those which were tweeted during the event. 
+
+The first group of tweets (pre- and post-hurrican) were separated into a training set and a test set; we used the training set to train several classification models and the test set to make predictions of pertinent or nonpertinent. The model with the most accurate predictions on the test set was then used to classify the tweets made during the hurricane.
+
+Having now a collection of around 100 tweets made during Hurricane Harvey which our model had classified as related to road closures, we used regular expressions to extract the intersections of those roads where the closures occurred. We then used a geocaching application to convert these intersections into latitudes and longitudes. Finally, we used Tableau to produce of map with a marker at each location.
 
 
 ## Data Dictionary
