@@ -34,19 +34,19 @@ For our fifth project in General Assembly Data Science Immersive course, we tack
 ### Code
 
 #### Data Collection
-[1](https://github.com/KellySlatery/client_project/blob/master/01_Project_Data_Collection.ipynb)
-[2](https://github.com/KellySlatery/client_project/blob/master/02_Extra_Data_Collection.ipynb)
-[3](https://github.com/KellySlatery/client_project/blob/master/03_Police_Data_Collection.ipynb)
+[1](https://github.com/KellySlatery/client_project/blob/master/01_Project_Data_Collection.ipynb)\
+[2](https://github.com/KellySlatery/client_project/blob/master/02_Extra_Data_Collection.ipynb)\
+[3](https://github.com/KellySlatery/client_project/blob/master/03_Police_Data_Collection.ipynb)\
 [4](https://github.com/KellySlatery/client_project/blob/master/04_Data_Concatenation.ipynb)
 
 #### Data Cleaning & EDA
-[1](https://github.com/KellySlatery/client_project/blob/master/05_EDA_and_Data_Cleaning.ipynb)
+[1](https://github.com/KellySlatery/client_project/blob/master/05_EDA_and_Data_Cleaning.ipynb)\
 [2](https://github.com/KellySlatery/client_project/blob/master/06_Prepare_Train_Data.ipynb)
 
 #### Modeling & Predictions
-[1](https://github.com/KellySlatery/client_project/blob/master/07_Model_Data_1.ipynb)
-[2](https://github.com/KellySlatery/client_project/blob/master/08_Model_Data_2.ipynb)
-[3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)
+[1](https://github.com/KellySlatery/client_project/blob/master/07_Model_Data_1.ipynb)\
+[2](https://github.com/KellySlatery/client_project/blob/master/08_Model_Data_2.ipynb)\
+[3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)\
 [4](https://github.com/KellySlatery/client_project/blob/master/10_Model_Predictions.ipynb)
 
 ### Data
