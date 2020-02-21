@@ -29,12 +29,18 @@ The goal of this project was to use text gathered from official Twitter feeds in
 [3: 09_Model_Data_3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)\
 [4: 10_Model_Predictions](https://github.com/KellySlatery/client_project/blob/master/10_Model_Predictions.ipynb)
 
+#### Mapping 
+[1: 11_Get_Locations.ipynb](https://github.com/KellySlatery/client_project/blob/master/11_Get_Locations.ipynb)\
+[2: 12_Get_Coordinates](https://github.com/KellySlatery/client_project/blob/master/12_Get_Coordinates.ipynb)\
+[3: 13_Get_Lat_Lng](https://github.com/KellySlatery/client_project/blob/master/13_Get_Lat_Lng.ipynb)\
+
 #### Data
 [All Data](https://github.com/KellySlatery/client_project/tree/master/data) → 
 [Training](https://github.com/KellySlatery/client_project/tree/master/data/train_data) | [Test](https://github.com/KellySlatery/client_project/tree/master/data/test_data)\
 [Predictions](https://github.com/KellySlatery/client_project/blob/master/data/final_data_with_predictions.csv)
 
-#### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
+### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
+
 
 ## Description of Data
 
