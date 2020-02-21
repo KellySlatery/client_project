@@ -55,6 +55,10 @@ For our fifth project in General Assembly Data Science Immersive course, we tack
 
 #### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
 
+## Description of Data
+
+All data were gathered in the form of tweets from transportation authorities and police departments across Texas. More than 100,000 tweets were collected using the [Get Old Tweets 3](https://github.com/Dawars/GetOldTweets3) Python library. A range of dates from 2016 to 2020 was specified for the library's scraping function to search, as well as Twitter usernames and maximum number of tweets to collect from each username. The tweets were saved in a pandas DataFrame, exported to a .csv file, then cleaned in [a separate Jupyter notebook](https://github.com/KellySlatery/client_project/blob/master/05_EDA_and_Data_Cleaning.ipynb).
+
 ## Executive Summary
 
 When a natural disaster occurs and evacuation of an area becomes necessary, it is imperative that the people in that area have quick and easy access to information about which routes to use and which to avoid. Often, this information is scattered across the internet and can be difficult to find. It must therefore be aggregated and converted into a more usable form. This project is an attempt to accomplish that goal.
