@@ -49,11 +49,11 @@ For our fifth project in General Assembly Data Science Immersive course, we tack
 [3](https://github.com/KellySlatery/client_project/blob/master/09_Model_Data_3.ipynb)\
 [4](https://github.com/KellySlatery/client_project/blob/master/10_Model_Predictions.ipynb)
 
-### Data
+#### Data
 [All](https://github.com/KellySlatery/client_project/tree/master/data) → [Training](https://github.com/KellySlatery/client_project/tree/master/data/train_data) | [Test](https://github.com/KellySlatery/client_project/tree/master/data/test_data)\
 [Predictions](https://github.com/KellySlatery/client_project/blob/master/data/final_data_with_predictions.csv)
 
-### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
+#### [Executive Summary](https://github.com/KellySlatery/client_project#executive-summary)
 
 ## Executive Summary
 
